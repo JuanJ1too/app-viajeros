@@ -8,7 +8,14 @@
 body {
     background-color: var(--background-light);
     font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* 🔒 elimina scroll horizontal innecesario */
+  }
 
 .navbar {
     background-color: var(--primary-color) !important;
@@ -29,9 +36,11 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px; /* Antes: 1200px */
+    width: 100%;
+    padding: 0 10px;
     margin: 0 auto;
-}
+  }
 
 .card {
     border: none;
@@ -62,14 +71,16 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     padding: 0.75rem 1rem;
     transition: all 0.3s ease;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.25rem rgba(228, 0, 43, 0.25);
 }
@@ -207,13 +218,27 @@ body {
     .container {
         padding: 0 1rem;
     }
-    
+
     .card {
         margin: 1rem 0;
     }
-    
+
     .btn {
         width: 100%;
         margin: 0.5rem 0;
     }
-} 
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4,
+    .col-md-8 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .container.mt-4.mb-4.text-center button {
+        width: 100%;
+    }
+}
