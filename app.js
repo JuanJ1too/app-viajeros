@@ -283,9 +283,9 @@ function salirPrograma() {
 // Datos de ejemplo
 ciudades.push(['Boston', 'USA'], ['Barcelona', 'España'], ['Bogotá', 'Colombia']);
 pasajeros.push(
-    ['David Velez', '70555952', 'Bogotá', 'Boston'],
+    ['Juan Jose Hurtado', '705345652', 'Bogotá', 'Boston'],
     ['Juan Jaramillo', '8152612', 'Boston', 'Barcelona'],
-    ['Clara López', '42722915', 'Barcelona', 'Bogotá']
+    ['Juan Estrada', '68822915', 'Barcelona', 'Bogotá']
 );
 
 // Inicialización
